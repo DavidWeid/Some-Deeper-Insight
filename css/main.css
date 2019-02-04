@@ -111,12 +111,62 @@ body {
   background-color: #dcdde1;
 }
 
-.portfolio-row {
+.portfolio-row, .contact-row {
   margin-top: 62px;
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #273C75;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+  color: #dcdde1;
+}
+
+.contact-row {
+  height: 100%;
+  margin-bottom: 0%;
+  margin: 0%;
+}
+
+#picContact {
+  background-color: #273C75;
+  height: 100%;
+}
+
+#textContact {
+  background-color: #dcdde1;
+  height: 100%;
+}
+
+#rowCenter {
+  margin: 0 auto;
+}
+
+.contact-btn {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.contact-btn:hover {
+  background-color: #dcdde1;
+}
+
+.bluez {
+  background-color: #273C75;
+}
+
+
 @media only screen and (max-width: 768px) {
   .bio-section {
+    width: 98%;
+  }
+  .slider .slides li .caption {
     width: 100%;
+    left: 0%;
+    top: 5%;
+  }
+  #bio-text {
+    line-height: 115%;
   }
 }

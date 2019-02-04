@@ -8,6 +8,8 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!--Materialize.css-->
     <link
       type="text/css"
@@ -34,7 +36,7 @@
           <div class="row center-align nav-color">
             <a class="hide-on-med-and-down nav-item hoverable" href="#">Works</a>
             <a href="#" class="logo">dAvId WeId</a>
-            <a class="hide-on-med-and-down nav-item hoverable" href="#">About</a>
+            <a class="hide-on-med-and-down nav-item hoverable" href="#">Contact</a>
             <a href="#" data-target="mobile-burger" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
@@ -52,7 +54,7 @@
     </div>
     <!--End Nav Container-->
 
-    <div class="container">
+    <div class="container" id="page-container">
     
       <!--Background Div-->
       <div class="slider fullscreen slide-back">
@@ -72,7 +74,7 @@
 
         <div class="row center-align portfolio-row">
 
-          <div class="col m4">
+          <div class="col m4 s12">
 
             <div class="card medium">
 
@@ -82,11 +84,13 @@
               </div>
     
               <div class="card-content">
+                <br/>
                 <p>Can you guess the word in this Christmas-themed word game?</p>
               </div>
     
               <div class="card-action">
-                <a href="#">Link it</a>
+                <a target="_blank" href="https://davidweid.github.io/Word-Guess-Game/"><i class="small material-icons">link</i>
+                </a>
               </div>
     
             </div>
@@ -95,7 +99,7 @@
           </div>
           <!--End Col-->
 
-          <div class="col m4">
+          <div class="col m4 s12">
 
             <div class="card medium">
 
@@ -105,11 +109,13 @@
               </div>
 
               <div class="card-content">
+                <br/>
                 <p>Collect the chaos emeralds and save the day!</p>
               </div>
 
               <div class="card-action">
-                <a href="#">Link it</a>
+                <a target="_blank" href="https://davidweid.github.io/unit-4-game/"><i class="small material-icons">link</i>
+                </a>
               </div>
 
             </div>
@@ -118,7 +124,7 @@
           </div>
           <!--End Col-->
 
-          <div class="col m4">
+          <div class="col m4 s12">
 
             <div class="card medium">
 
@@ -128,11 +134,13 @@
               </div>
       
               <div class="card-content">
+                <br/>
                 <p>How well do you know general trivia?</p>
               </div>
       
               <div class="card-action">
-                <a href="#">Link it</a>
+                <a target="_blank" href="https://davidweid.github.io/TriviaGame/"><i class="small material-icons">link</i>
+                </a>
               </div>
       
             </div>
@@ -144,8 +152,123 @@
         </div>
         <!--End Row-->
 
+        <div class="row center-align portfolio-row">
+
+          <div class="col m4 s12">
+  
+            <div class="card medium">
+  
+              <div class="card-image">
+                <img src="images/clocksWide.jpg"/>
+                <span class="card-title">Trains on Time</span>
+              </div>
+      
+              <div class="card-content">
+                <br/>
+                <p>A handy application for scheduling the comings and goings of trains. </p>
+              </div>
+    
+              <div class="card-action">
+                <a target="_blank" href="https://davidweid.github.io/Train-Time-on-Time/"><i class="small material-icons">link</i>
+                </a>
+              </div>
+      
+            </div>
+            <!--End Card Div-->
+  
+          </div>
+          <!--End Col-->
+
+          <div class="col m4 s12">
+  
+            <div class="card medium">
+
+              <div class="card-image">
+                <img src="images/anime.gif" alt="">
+                <span class="card-title">Anime in Motion</span>
+              </div>
+    
+              <div class="card-content">
+                <br/>
+                <p>Everyone loves a good gif! Find the perfect one with this gif-tastic application!</p>
+              </div>
+  
+              <div class="card-action">
+                <a target="_blank" href="https://davidweid.github.io/GifTasticGiphy/"><i class="small material-icons">link</i>
+                </a>
+              </div>
+    
+            </div>
+            <!--End Card Div-->
+    
+          </div>
+          <!--End Col-->
+
+          <div class="col m4 s12">
+  
+            <div class="card medium">
+  
+              <div class="card-image">
+                <img src="images/foodWide.jpg" alt="">
+                <span class="card-title">Foodeez</span>
+              </div>
+      
+              <div class="card-content">
+                <br/>
+                <p>An answer to that age old question: "What do you want to eat?"</p>
+              </div>
+    
+              <div class="card-action">
+                <a target="_blank" href="https://davidweid.github.io/First-BC-Project/"><i class="small material-icons">link</i>
+                </a>
+              </div>
+      
+            </div>
+            <!--End Card Div-->
+      
+          </div>
+          <!--End Col-->
+
+        </div>
+        <!--End Row-->
+
+        <div class="row center-align contact-row">
+
+          <div class="col m6 s12" id="picContact">
+            
+
+
+          </div>
+          <!--End Col-->
+
+          <div class="col m6 s12 valign-wrapper" id="textContact">
+
+            <div class="row" id="rowCenter">
+
+              <div class="col m8 sm10">
+
+                <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">email</i></a>
+
+                <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">phone_android</i></a>
+
+                <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="fab fa-github"></i></a>
+
+                <!-- <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="fab fa-facebook-f"></i></a> -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <!--End Row-->
+
       </div>
-      <!--Background Div End-->
+      <!--End Background Div-->
+
+      
+
     </div>
     <!--End Main Container-->
 
