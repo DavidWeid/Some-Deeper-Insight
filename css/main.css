@@ -12,6 +12,10 @@ body {
   padding-top: 8px;
 }
 
+#nav-row:hover {
+  background-color: #dcdde1;
+}
+
 #nav-line {
   height: 130%;
 }
@@ -67,6 +71,7 @@ body {
 
 .slider .slides li .caption {
   color: #dcdde1;
+  color: #273C75;
 }
 
 .slider .indicators .indicator-item {
@@ -86,11 +91,12 @@ body {
   padding-bottom: 24px;
   width: 50%;
   border-bottom: 1px solid #dcdde1;
+  border-bottom: 2px solid #273C75;
 }
 
 #bio-text {
   line-height: 150%;
-  font-weight: 500;
+  font-weight: 550;
 }
 
 .bio-section {
@@ -98,9 +104,19 @@ body {
   width: 75%;
   margin: 0 auto;
   background-color: rgba(39, 60, 117, 0.4);
+  background-color: rgba(220, 221, 225, 0.85);
 }
 
-#body-container {
+.bio-section:hover {
+  background-color: #dcdde1;
+}
+
+.portfolio-row {
   margin-top: 62px;
-  /* background-color: #273C75; */
+}
+
+@media only screen and (max-width: 768px) {
+  .bio-section {
+    width: 100%;
+  }
 }
