@@ -1,9 +1,13 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 .nav-container {
   min-width: 100%;
 }
 
 #nav-row {
-  background-color: #dcdde1;
+  background-color: rgba(220, 221, 225, 0.85);
   height: 125%;
   padding-top: 8px;
 }
@@ -52,10 +56,6 @@
   font-weight: 600;
 }
 
-#body-container {
-  background-color: #273C75;
-}
-
 .slide-back {
   z-index: -1;
   opacity: 1.0;
@@ -74,5 +74,33 @@
 }
 
 #welcome-text {
-  border-bottom: #dcdde1 1px solid;
+  padding-bottom: 24px;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+#welcome-text:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 24px;
+  width: 50%;
+  border-bottom: 1px solid #dcdde1;
+}
+
+#bio-text {
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.bio-section {
+  padding: 24px;
+  width: 75%;
+  margin: 0 auto;
+  background-color: rgba(39, 60, 117, 0.4);
+}
+
+#body-container {
+  margin-top: 62px;
+  /* background-color: #273C75; */
 }
