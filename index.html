@@ -2,8 +2,8 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>Take a Peek</title>
-    <!--Google Icon Font-->
+    <title>David Weid | Portfolio</title>
+    <!--Google Material Icon Font-->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -26,15 +26,14 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body>
+
     <div class="container nav-container">
-      <nav>
+      <nav id="nav-row">
         <div class="nav-wrapper">
-          <div class="row center-align">
-            <a class="hide-on-med-and-down nav-item" href="#">Guys</a>
-            <a class="hide-on-med-and-down nav-item" href="#">Draw Him</a>
-            <a href="#" class="logo">sTay a wHiLe</a>
-            <a class="hide-on-med-and-down nav-item" href="#">Submit</a>
-            <a class="hide-on-med-and-down nav-item" href="#">Ask Me</a>
+          <div class="row center-align nav-color">
+            <a class="hide-on-med-and-down nav-item hoverable" href="#">Works</a>
+            <a href="#" class="logo">dAvId WeId</a>
+            <a class="hide-on-med-and-down nav-item hoverable" href="#">About</a>
             <a href="#" data-target="mobile-burger" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
@@ -42,13 +41,34 @@
         </div>
       </nav>
 
-      <ul style="font-family: 'Fahkwang', 'sans-serif'" class="sidenav" id="mobile-burger">
-        <li><a href="#">Guys</a></li>
-        <li><a href="#">Draw him</a></li>
-        <li><a href="#">Submit</a></li>
-        <li><a href="#">Ask Me</a></li>
+        <!--Side Nav for small screens-->
+        <ul style="font-family: 'Fahkwang', 'sans-serif'" class="sidenav sidenav-bg center-align" id="mobile-burger">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!--Nav Container-->
+
+    <div class="slider fullscreen slide-back">
+      <ul class="slides">
+        <li>
+          <img src="images/space.jpg"/>
+          <div class="caption center-align main-text">
+            <h2 id="welcome-text">Welcome,</h2>
+            <h4 class="text-lighten-3">My name is David Weid</h4>
+          </div>
+        </li>
       </ul>
     </div>
+
+    <!-- <div class="container" id="body-container">
+
+      <div>
+
+      </div>
+
+    </div> -->
 
     <!--jQuery-->
     <script
