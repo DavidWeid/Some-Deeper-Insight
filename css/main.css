@@ -148,7 +148,7 @@ body {
   margin-bottom: 48px;
 }
 
-.contact-btn:hover {
+.contact-btn:hover, .nav-btn:hover {
   background-color: #dcdde1;
 }
 

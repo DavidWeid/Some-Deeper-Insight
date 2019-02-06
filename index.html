@@ -34,9 +34,9 @@
       <nav id="nav-row" class="z-depth-5">
         <div class="nav-wrapper">
           <div class="row center-align nav-color">
-            <a class="hide-on-med-and-down nav-item hoverable" href="#">Works</a>
-            <a href="#" class="logo">dAvId WeId</a>
-            <a class="hide-on-med-and-down nav-item hoverable" href="#">Contact</a>
+            <a class="hide-on-med-and-down nav-item hoverable" href="#works">Works</a>
+            <a href="#about" class="logo">dAvId WeId</a>
+            <a class="hide-on-med-and-down nav-item hoverable" href="#contact">Contact</a>
             <a href="#" data-target="mobile-burger" class="sidenav-trigger"
               ><i class="material-icons">menu</i></a
             >
@@ -46,20 +46,26 @@
 
         <!--Side Nav for small screens-->
         <ul style="font-family: 'Fahkwang', 'sans-serif'" class="sidenav sidenav-bg center-align" id="mobile-burger">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <!--End Side Nav-->
     </div>
     <!--End Nav Container-->
+
+    <div class="fixed-action-btn direction-top" style="bottom: 45px; right: 24px;">
+      <a href="#about" class="nav-btn btn-floating btn-large waves-effect waves-light bluez">
+        <i class="material-icons">arrow_upward</i>
+      </a>
+    </div>
 
     <div class="container" id="page-container">
     
       <!--Background Div-->
       <div class="slider fullscreen slide-back">
 
-        <ul class="slides">
+        <ul class="slides section scrollspy" id="about">
           <li>
             <img src="images/space.jpg"/>
             <div class="caption center-align main-text">
@@ -72,7 +78,7 @@
         </ul>
         <!--End Slides ul-->
 
-        <div class="row center-align portfolio-row">
+        <div class="row center-align portfolio-row section scrollspy" id="works"">
 
           <div class="col m4 s12">
 
@@ -279,7 +285,7 @@
 
                 <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">email</i></a>
 
-                <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">phone_android</i></a>
+                <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez section scrollspy" id="contact"><i class="material-icons">phone_android</i></a>
 
                 <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://github.com/DavidWeid"><i class="fab fa-github"></i></a>
 
