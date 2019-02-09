@@ -24,6 +24,10 @@ body {
   color: #273C75;
 }
 
+.nav-item {
+  border-radius: 25px;
+}
+
 .logo {
   font-size: 180%;
   font-weight: 500;
@@ -105,6 +109,7 @@ body {
   margin: 0 auto;
   background-color: rgba(39, 60, 117, 0.4);
   background-color: rgba(220, 221, 225, 0.85);
+  border-radius: 10px;
 }
 
 .bio-section:hover {
@@ -148,8 +153,16 @@ body {
   margin-bottom: 48px;
 }
 
+.contact-btn:visited, .nav-btn:visited {
+  background-color: #273C75;
+}
+
 .contact-btn:hover, .nav-btn:hover {
   background-color: #dcdde1;
+}
+
+.contact-btn:active, .nav-btn:active {
+  background-color: #718093;
 }
 
 .bluez {
