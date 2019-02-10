@@ -118,6 +118,10 @@ body, html {
 
 /* -------------------------------------------- */
 
+.portfolio-container {
+  width: 98%;
+}
+
 .portfolio-row, .contact-row {
   margin-top: 20px;
 }
@@ -188,6 +192,9 @@ body, html {
     }
     #bio-text {
         line-height: 115%;
+    }
+    .portfolio-container, .portfolio-row {
+      width: 100%;
     }
     .card-col {
         width: 98%;
