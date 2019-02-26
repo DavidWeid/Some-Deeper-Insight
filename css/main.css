@@ -141,6 +141,10 @@ body, html {
   color: #dcdde1;
 }
 
+#word-guess {
+  color: black;
+}
+
 /* -------------------------------------------- */
 
 .contact-row {
