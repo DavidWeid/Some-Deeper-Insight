@@ -1,5 +1,6 @@
-body {
+body, html {
   font-family: "Open Sans", sans-serif;
+  height: 100%;
 }
 
 .nav-container {
@@ -43,9 +44,11 @@ body {
   padding: 14px;
   font-family: "Fahkwang", sans-serif;
   font-weight: 600;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin-right: 32px;
+  margin-left: 32px;
 }
+
+/* -------------------------------------------- */
 
 .sidenav-bg {
   background-color: #dcdde1;
@@ -64,25 +67,36 @@ body {
   font-weight: 600;
 }
 
-.slide-back {
-  z-index: -1;
-  opacity: 1.0;
+/* -------------------------------------------- */
+
+.bio-row {
+    height: 100%;
+    background-image: url("../images/space.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-text {
-  padding-top: 72px;
+  padding-top: 10%;
 }
 
-.slider .slides li .caption {
-  color: #dcdde1;
-  color: #273C75;
+.bio-section {
+    padding: 24px;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgba(39, 60, 117, 0.4);
+    background-color: rgba(220, 221, 225, 0.85);
+    border-radius: 10px;
 }
-
-.slider .indicators .indicator-item {
-  display: none;
+  
+.bio-section:hover {
+    background-color: #dcdde1;
 }
 
 #welcome-text {
+  color: #273c75;
   padding-bottom: 24px;
   margin-top: 0;
   font-weight: 500;
@@ -101,23 +115,22 @@ body {
 #bio-text {
   line-height: 150%;
   font-weight: 550;
+  padding: 6px;
 }
 
-.bio-section {
-  padding: 24px;
-  width: 75%;
+/* -------------------------------------------- */
+
+.portfolio-container {
+  width: 96%;
   margin: 0 auto;
-  background-color: rgba(39, 60, 117, 0.4);
-  background-color: rgba(220, 221, 225, 0.85);
-  border-radius: 10px;
-}
-
-.bio-section:hover {
-  background-color: #dcdde1;
 }
 
 .portfolio-row, .contact-row {
-  margin-top: 62px;
+  margin-top: 20px;
+}
+
+#works {
+    margin-top: 84px;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
@@ -127,6 +140,8 @@ body {
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
   color: #dcdde1;
 }
+
+/* -------------------------------------------- */
 
 .contact-row {
   height: 100%;
@@ -169,17 +184,22 @@ body {
   background-color: #273C75;
 }
 
+/* -------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-  .bio-section {
-    width: 98%;
-  }
-  .slider .slides li .caption {
-    width: 100%;
-    left: 0%;
-    top: 5%;
-  }
-  #bio-text {
-    line-height: 115%;
-  }
+    .main-text {
+        padding-top: 15%;
+    }
+    .bio-section {
+        width: 98%;
+    }
+    #bio-text {
+        line-height: 115%;
+    }
+    .portfolio-container, .portfolio-row {
+      width: 100%;
+    }
+    .card-col {
+        width: 98%;
+    }
 }
