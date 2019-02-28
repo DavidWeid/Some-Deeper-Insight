@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   font-family: "Open Sans", sans-serif;
   height: 100%;
   background-image: url("../images/lightToast.png");
@@ -24,7 +25,7 @@ body, html {
 }
 
 .nav-color a {
-  color: #273C75;
+  color: #273c75;
 }
 
 .nav-item {
@@ -38,7 +39,7 @@ body, html {
   padding-left: 18px;
   padding-bottom: 16px;
   font-family: "Major Mono Display", monospace;
-  border-bottom: #273C75 1px solid;
+  border-bottom: #273c75 1px solid;
 }
 
 .nav-item {
@@ -60,23 +61,23 @@ body, html {
   padding-top: 48px;
 }
 
-.nav-container ul>li {
+.nav-container ul > li {
   margin-top: 24px;
 }
 
-.sidenav-bg li>a {
-  color: #273C75;
+.sidenav-bg li > a {
+  color: #273c75;
   font-weight: 600;
 }
 
 /* -------------------------------------------- */
 
 .bio-row {
-    height: 100%;
-    background-image: url("../images/space.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 100%;
+  background-image: url("../images/space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-text {
@@ -84,17 +85,25 @@ body, html {
 }
 
 .bio-section {
-    padding: 24px;
-    width: 60%;
-    height: auto;
-    margin: 0 auto;
-    background-color: rgba(39, 60, 117, 0.4);
-    background-color: rgba(220, 221, 225, 0.85);
-    border-radius: 10px;
+  padding: 24px;
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(39, 60, 117, 0.4);
+  background-color: rgba(220, 221, 225, 0.85);
+  background-image: linear-gradient(
+    141deg,
+    rgb(195, 196, 199) 0%,
+    rgba(220, 221, 225) 51%,
+    rgba(170, 170, 170) 75%
+  );
+  opacity: 0.9;
+  border-radius: 10px;
 }
-  
+
 .bio-section:hover {
-    background-color: #dcdde1;
+  opacity: 1;
+  background-color: rgb(158, 158, 161);
 }
 
 #welcome-text {
@@ -111,7 +120,7 @@ body, html {
   padding-bottom: 24px;
   width: 50%;
   border-bottom: 1px solid #dcdde1;
-  border-bottom: 2px solid #273C75;
+  border-bottom: 2px solid #273c75;
 }
 
 #bio-text {
@@ -127,24 +136,29 @@ body, html {
   margin: 0 auto;
 }
 
-.portfolio-row, .contact-row {
+.portfolio-row,
+.contact-row {
   margin-top: 20px;
 }
 
 #works {
-    margin-top: 84px;
+  margin-top: 84px;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #273C75;
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+  color: #273c75;
 }
 
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
+.card
+  .card-action
+  a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
   color: #dcdde1;
 }
 
 #word-guess {
-  color: black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* -------------------------------------------- */
@@ -156,7 +170,7 @@ body, html {
 }
 
 #picContact {
-  background-color: #273C75;
+  background-color: #273c75;
   height: 100%;
 }
 
@@ -174,38 +188,42 @@ body, html {
   margin-bottom: 48px;
 }
 
-.contact-btn:visited, .nav-btn:visited {
-  background-color: #273C75;
+.contact-btn:visited,
+.nav-btn:visited {
+  background-color: #273c75;
 }
 
-.contact-btn:hover, .nav-btn:hover {
+.contact-btn:hover,
+.nav-btn:hover {
   background-color: #dcdde1;
 }
 
-.contact-btn:active, .nav-btn:active {
+.contact-btn:active,
+.nav-btn:active {
   background-color: #718093;
 }
 
 .bluez {
-  background-color: #273C75;
+  background-color: #273c75;
 }
 
 /* -------------------------------------------- */
 
 @media only screen and (max-width: 768px) {
-    .main-text {
-        padding-top: 15%;
-    }
-    .bio-section {
-        width: 98%;
-    }
-    #bio-text {
-        line-height: 115%;
-    }
-    .portfolio-container, .portfolio-row {
-      width: 100%;
-    }
-    .card-col {
-        width: 98%;
-    }
+  .main-text {
+    padding-top: 15%;
+  }
+  .bio-section {
+    width: 98%;
+  }
+  #bio-text {
+    line-height: 115%;
+  }
+  .portfolio-container,
+  .portfolio-row {
+    width: 100%;
+  }
+  .card-col {
+    width: 98%;
+  }
 }
