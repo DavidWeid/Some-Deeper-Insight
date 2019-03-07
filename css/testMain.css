@@ -5,7 +5,7 @@ body, html {
     font-family: "Fahkwang";
 }
 
-.full-container {
+.page-one {
     position: relative;
     height: 100%;
     width: 100%;
@@ -52,7 +52,7 @@ body, html {
     margin-right: 20px;
 }
 
-.page-one {
+.full-container {
     position: absolute;
     top: 0;
     left: 0;
