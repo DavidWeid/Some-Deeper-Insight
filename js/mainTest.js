@@ -1,6 +1,14 @@
 $(document).ready(function() {
 
+    var status = "off";
+    var page;
+    var button = "#";
+    var btnTxtHome = "Home";
+    var btnTxtAway;
+
     $("#works-btn").on("click", function() {
+
+        
 
         var status = $(this).data("status");
         var page = ".page-two";
