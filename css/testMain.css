@@ -46,32 +46,44 @@ body, html {
 /* Navigation buttons */
 .main-btn-div {
     width: 20%;
-    position: absolute;
-    top: 50%;
-    right: -5%;
-    transform: rotateZ(90deg);
     border: 0 solid white;
     z-index: 10;
     opacity: 0.75;
 } .main-btn-div:hover {
     opacity: 1;
-} .main-btn {
+}
+
+.works-btn-div {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    transform: rotateZ(90deg);
+}
+
+.contact-btn-div {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: rotateZ(-90deg);
+}
+
+.main-btn {
     font-family: "Fahkwang";
     font-weight: 500;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: rgba(250, 250, 250, 0);
 } .main-btn:focus {
     color: black;
     background-color: white;
 } .main-btn:hover, .main-btn:active {
     color: white;
     background-color: black;
-} #works-btn {
-    width: 45%;
-    float: left;
+}
+
+#works-btn {
+    width: 98%;
 } #contact-btn {
-    width: 45%;
-    float: right;
+    width: 98%;
 }
 
 /* Page with space background */
