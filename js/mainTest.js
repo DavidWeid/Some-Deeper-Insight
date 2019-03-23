@@ -1,60 +1,64 @@
 $(document).ready(function() {
 
-    var status = "off";
-    var page;
-    var button = "#";
-    var btnTxtHome = "Home";
-    var btnTxtAway;
-
     $("#works-btn").on("click", function() {
-
-        
-
-        var status = $(this).data("status");
-        var page = ".page-two";
-        var button = "#" + $(this).attr("id");
-        var btnTxt = "Works";
-
-        if (status === "off") {
-            pageUp(button, page, btnTxt);
-
+        if($(this).data("status") === "off") {
+            worksPageUp();
+            contactPageDown();
+            pageOneDown();
         } else {
-            pageDown(button, page, btnTxt);
-            pageDown("#contact-btn", ".page-three", "Contact");
+            worksPageDown();
+            contactPageDown();
+            pageOneUp();
         }
-
     });
 
     $("#contact-btn").on("click", function() {
-
-        var status = $(this).data("status");
-        var page = ".page-three";
-        var button = "#" + $(this).attr("id");
-        var btnTxt = "Contact";
-
-        if (status === "off") {
-            pageUp(button, page, btnTxt);
-
+        if($(this).data("status") === "off") {
+            contactPageUp();
+            worksPageDown();
+            pageOneDown();
         } else {
-            pageDown(button, page, btnTxt);
-            pageDown("#works-btn", ".page-two", "Works");
+            contactPageDown();
+            worksPageDown();
+            pageOneUp();
         }
-
     });
 
-    var pageUp = function(button, page, btnTxt) {
+    var pageOneUp = function() {
+        $(".page-one").css("opacity", "1");
+        $(".full-container").css("background", "rgba(0,0,0,0.3)");
+    };
+
+    var pageOneDown = function() {
+        $(".page-one").css("opacity", "0");
+        $(".full-container").css("background", "rgba(0,0,0,1)");
+    }
+
+    var worksPageUp = function() {
+        $("#works-btn").data("status", "on");
+        $(".page-two").css("height", "100%");
+        $("#works-btn").text("HOME");
+    };
+
+    var worksPageDown = function() {
+        $("#works-btn").data("status", "off");
+        $(".page-two").css("height", "0%");
+        $("#works-btn").text("WORKS");
+    };
+
+    var contactPageUp = function(button, page, btnTxt) {
         
-        $(button).data("status", "on");
-        $(page).css("height", "100%");
-        $(button).text("Home");
+        $("#contact-btn").data("status", "on");
+        $(".page-three").css("height", "100%");
+        $("#contact-btn").text("HOME");
     };
     
-    var pageDown = function(button, page, btnTxt) {
+    var contactPageDown = function(button, page, btnTxt) {
     
-        $(button).data("status", "off");
-        $(page).css("height", "0%");
-        $(button).text(btnTxt);
-    }
+        $("#contact-btn").data("status", "off");
+        $(".page-three").css("height", "0%");
+        $("#contact-btn").text("CONTACT");
+    };
 
 })
 // Document.ready

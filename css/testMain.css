@@ -48,9 +48,10 @@ body, html {
     width: 20%;
     border: 0 solid white;
     z-index: 10;
-    opacity: 0.75;
+    opacity: 0.85;
 } .main-btn-div:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .works-btn-div {
@@ -73,17 +74,22 @@ body, html {
     color: white;
     background-color: rgba(250, 250, 250, 0);
 } .main-btn:focus {
-    color: black;
     background-color: white;
 } .main-btn:hover, .main-btn:active {
     color: white;
-    background-color: black;
 }
 
 #works-btn {
     width: 98%;
 } #contact-btn {
     width: 98%;
+}
+
+.no-select {
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 /* Page with space background */
@@ -136,7 +142,7 @@ body, html {
     color: white;
     font-family: "Roboto";
     font-size: 20px;
-    width: 40%;
+    width: 60%;
 }
 
 #about-me {
@@ -145,4 +151,11 @@ body, html {
 } @keyframes displayText {
     from {Opacity: 0;}
     to {Opacity: 1.0;}
+}
+
+@media only screen and (max-widith: 768px) {
+    div.main-text {
+        color: black;
+        width: 90%;
+    }
 }
