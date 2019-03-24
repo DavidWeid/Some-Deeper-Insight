@@ -46,14 +46,14 @@ $(document).ready(function() {
         $("#works-btn").text("WORKS");
     };
 
-    var contactPageUp = function(button, page, btnTxt) {
+    var contactPageUp = function() {
         
         $("#contact-btn").data("status", "on");
         $(".page-three").css("height", "100%");
         $("#contact-btn").text("HOME");
     };
     
-    var contactPageDown = function(button, page, btnTxt) {
+    var contactPageDown = function() {
     
         $("#contact-btn").data("status", "off");
         $(".page-three").css("height", "0%");
