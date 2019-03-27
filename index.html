@@ -204,30 +204,36 @@
 
       <div class="page-three">
 
-        <div class="row main-contact">
+        <div class="contact-overlay">
+          Phone: 561.601.5996 <span id="vline"> | </span> Orlando, FL
+        </div>
+
+        <div class="row contactBtn-row">
 
           <div class="" id="contactBtnDiv">
-            <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">email</i></a>
+            <a data-status="off" id="email-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">email</i></a>
 
-            <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez section scrollspy" id="contact"><i class="material-icons">phone_android</i></a>
+            <!-- <a id="phone-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez section scrollspy" id="contact"><i class="material-icons">phone_android</i></a> -->
 
-            <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://github.com/DavidWeid" target="_blank"><i class="fab fa-github"></i></a>
+            <a id="git-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://github.com/DavidWeid" target="_blank"><i class="fab fa-github"></i></a>
 
-            <a class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://www.facebook.com/II.xDavidx.II" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a id="fb-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://www.facebook.com/II.xDavidx.II" target="_blank"><i class="fab fa-facebook-f"></i></a>
           </div>
 
-          <div id="contactForm">
-            <form id="contact-form">
-              <input type="hidden" name="contact_number">
-              <label>Name</label>
-              <input type="text" name="user_name">
-              <label>Email</label>
-              <input type="email" name="user_email">
-              <label>Message</label>
-              <textarea name="contact"></textarea>
-              <input class="bluez btn contact-btn" type="submit" value="Send">
-            </form>
-          </div>
+        </div>
+
+        <div class="row contactForm-row" id="contactForm">
+
+          <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input required type="text" name="user_name">
+            <label>Email</label>
+            <input required type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="contact"></textarea>
+            <input class="bluez btn contact-btn" type="submit" value="Send">
+          </form>
 
         </div>
 

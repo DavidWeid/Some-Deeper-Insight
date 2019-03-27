@@ -24,6 +24,36 @@ $(document).ready(function() {
         }
     });
 
+    $("#email-btn").on("click", function() {
+        if($(this).data("status") === "off") {
+            $(this).data("status", "on");
+            contactBtnDivUp();
+            contactFormUp();
+        } else {
+            $(this).data("status", "off");
+            contactBtnDivDown();
+            contactFormDown();
+        }
+    });
+
+    var contactBtnDivUp = function() {
+        $(".contactBtn-row").css("height", "25%");
+        $("#contactBtnDiv").css("top", "18%");    
+    };
+
+    var contactBtnDivDown = function() {
+        $(".contactBtn-row").css("height", "100%");
+        $("#contactBtnDiv").css("top", "50%");
+    };
+
+    var contactFormUp = function() {
+        $(".contactForm-row").css("height", "75%");   
+    };
+
+    var contactFormDown = function() {
+        $(".contactForm-row").css("height", "0%");
+    }
+
     var pageOneUp = function() {
         $(".page-one").css("opacity", "1");
         $(".full-container").css("background", "rgba(0,0,0,0.3)");

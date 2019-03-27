@@ -239,13 +239,32 @@ html {
   background-color: rgba(25, 26, 34, 1);
 }
 
-.main-contact {
+.contact-overlay {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+} #vline {
+  padding: 0 12px 0 12px;
+}
+
+.contactBtn-row {
   text-align: center;
   font-family: "Roboto";
   font-size: 20px;
   width: 78%;
   margin: 0 auto;
   height: 100%;
+  transition: 0.5s ease;
+}
+
+.contactForm-row {
+  font-family: "Roboto";
+  font-size: 20px;
+  width: 48%;
+  margin: 0 auto;
+  height: 0%;
+  transition: 0.5s ease;
 }
 
 #contactBtnDiv {
@@ -258,6 +277,7 @@ html {
   font-family: "Roboto";
   font-size: 20px;
   width: 60%;
+  transition: 0.5s ease;
 }
 
 .contact-btn {
