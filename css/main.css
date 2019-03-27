@@ -32,9 +32,11 @@ html {
   border: 1px rgba(250, 250, 250, 1);
   border-style: groove ridge;
   animation: border-pulsate 5s infinite linear;
-} .overlay:hover {
+}
+.overlay:hover {
   background: rgba(0, 0, 0, 0);
-} @keyframes border-pulsate {
+}
+@keyframes border-pulsate {
   0% {
     border-color: rgba(250, 250, 250, 1);
   }
@@ -64,7 +66,8 @@ html {
   border: 0 solid white;
   z-index: 10;
   opacity: 0.85;
-} .main-btn-div:hover {
+}
+.main-btn-div:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -88,10 +91,12 @@ html {
   font-weight: 500;
   color: white;
   background-color: rgba(250, 250, 250, 0);
-} .main-btn:focus {
+}
+.main-btn:focus {
   background-color: white;
-} .main-btn:hover,
-  .main-btn:active {
+}
+.main-btn:hover,
+.main-btn:active {
   color: white;
 }
 
@@ -118,7 +123,8 @@ html {
   background-size: 100%;
   animation: panning 100s infinite ease-in-out;
   transition: 0.5s ease;
-} @keyframes panning {
+}
+@keyframes panning {
   0% {
     background-position: 0% 0%;
   }
@@ -183,7 +189,8 @@ html {
 #about-me {
   opacity: 0;
   animation: displayText 3s 1s linear both;
-} @keyframes displayText {
+}
+@keyframes displayText {
   from {
     opacity: 0;
   }
@@ -216,7 +223,8 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
-} .cardDiv:hover {
+}
+.cardDiv:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -254,14 +262,17 @@ html {
 
 .contact-btn {
   margin: 1%;
-} .contact-btn:visited,
-  .nav-btn:visited {
+}
+.contact-btn:visited,
+.nav-btn:visited {
   background-color: #273c75;
-} .contact-btn:hover,
-  .nav-btn:hover {
+}
+.contact-btn:hover,
+.nav-btn:hover {
   background-color: #dcdde1;
-} .contact-btn:active,
-  .nav-btn:active {
+}
+.contact-btn:active,
+.nav-btn:active {
   background-color: #718093;
 }
 
@@ -269,7 +280,32 @@ html {
   background-color: #273c75;
 }
 
-#contactForm {
+#contactForm input[type=text], input[type=email], textarea {
+  color: white;
+  text-align: center;
+  border: 1px solid white !important;
+}
+
+#contactForm label {
+  color: white;
+}
+#contactForm textarea:focus, input[type="text"]:focus, input[type=email]:focus + label {
+  color: white;
+  box-shadow: 0 1px 0 0 white !important;
+}
+#contactForm textarea:focus, input[type="text"]:focus, input[type=email]:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+#contactForm input[type="text"].valid, input[type=email].valid {
+  border-bottom: 1px solid #273c75 !important;
+  box-shadow: 0 1px 0 0 #273c75 !important;
+}
+#contactForm input[type="text"].invalid, input[type=email].invalid {
+  border-bottom: 1px solid darkred !important;
+  box-shadow: 0 1px 0 0 darkred !important;
+}
+#contactForm .prefix.active {
   color: white;
 }
 
