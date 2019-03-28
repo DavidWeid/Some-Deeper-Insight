@@ -165,7 +165,7 @@ html {
   left: 0;
   right: 0;
   color: snow;
-  background: rgb(10, 10, 10);
+  background: #162242;
   background-size: 100%;
   overflow: hidden;
   width: 100%;
@@ -239,11 +239,37 @@ html {
   background-color: rgba(25, 26, 34, 1);
 }
 
+.skewed-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  width: 50%;
+  height: 100%;
+  background-color: #7B8EC1;
+  transform: skew(-25deg);
+  transform-origin: bottom left;
+}
+
+.skewed-bg2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #7B8EC1;
+  transform: skew(-25deg);
+  transform-origin: top left;
+}
+
 .contact-overlay {
   position: absolute;
   bottom: 2%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
 } #vline {
   padding: 0 12px 0 12px;
 }
@@ -259,6 +285,7 @@ html {
 }
 
 .contactForm-row {
+  position: relative;
   font-family: "Roboto";
   font-size: 20px;
   width: 48%;
