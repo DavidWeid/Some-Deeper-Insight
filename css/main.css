@@ -270,6 +270,8 @@ html {
   bottom: 2%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 95%;
+  text-align: center;
 } #vline {
   padding: 0 12px 0 12px;
 }
