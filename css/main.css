@@ -183,7 +183,7 @@ html {
   color: white;
   font-family: "Roboto";
   font-size: 20px;
-  width: 60%;
+  width: 80%;
 }
 
 #about-me {
@@ -357,8 +357,8 @@ html {
 }
 
 @media only screen and (max-widith: 768px) {
-  div.main-text {
+  .main-text {
     color: black;
-    width: 90%;
+    width: 70%;
   }
 }
