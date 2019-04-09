@@ -71,8 +71,8 @@ $(document).ready(function() {
     $("#works-btn").data("status", "on");
     $(".page-two").css("height", "100%");
     $("#works-btn").text("HOME");
-    pageOneDown();
-    contactPageDown();
+    // pageOneDown();
+    // contactPageDown();
   };
 
   var worksPageDown = function() {
@@ -85,8 +85,8 @@ $(document).ready(function() {
     $("#contact-btn").data("status", "on");
     $(".page-three").css("height", "100%");
     $("#contact-btn").text("HOME");
-    pageOneDown();
-    worksPageDown();
+    // pageOneDown();
+    // worksPageDown();
   };
 
   var contactPageDown = function() {
