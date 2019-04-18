@@ -118,6 +118,7 @@ html {
 /* Page with space background */
 .page-one {
   position: relative;
+  overflow: hidden;
   height: 100%;
   width: 100%;
   background: black url("../images/space.jpg");
