@@ -216,7 +216,7 @@ html {
     width: 80%;
   }
 
-  .main-btn-div {
+  /* .main-btn-div {
     width: 50%;
   }
 
@@ -224,7 +224,7 @@ html {
   .contact-btn-div {
     top: 4%;
     transform: rotateZ(0);
-  }
+  } */
 }
 
 .flex-container {
@@ -271,10 +271,10 @@ html {
 }
 
 @media all and (max-width: 500px) {
-  .flex-container {
+  /* .flex-container {
     position: relative;
     top: 10%;
-  }
+  } */
   .column {
     width: 95%;
     font-size: 100%;
