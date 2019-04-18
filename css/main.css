@@ -218,7 +218,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   /* justify-content: center; */
-  justify-content: space-evenly;
+  justify-content: space-between;
   /* justify-content: space-evenly; */
   /* align-content: center; */
   /* align-content: space-around; */
@@ -236,10 +236,16 @@ html {
 
 .column {
   width: 30%;
-  height: 30%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 @media all and (max-width: 800px) {
+  .flex-container {
+    justify-content: space-evenly;
+  }
+
   .column {
     width: 45%;
     margin-top: 2%;
