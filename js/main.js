@@ -4,11 +4,11 @@ $(document).ready(function() {
   $("#works-btn").on("click", function() {
     if ($(this).data("status") === "off") {
       worksPageUp();
-    //   contactPageDown();
-    //   pageOneDown();
+      contactPageDown();
+      pageOneDown();
     } else {
-    //   worksPageDown();
-    //   contactPageDown();
+      worksPageDown();
+      contactPageDown();
       pageOneUp();
     }
   });
@@ -16,11 +16,11 @@ $(document).ready(function() {
   $("#contact-btn").on("click", function() {
     if ($(this).data("status") === "off") {
       contactPageUp();
-    //   worksPageDown();
-    //   pageOneDown();
+      worksPageDown();
+      pageOneDown();
     } else {
-    //   contactPageDown();
-    //   worksPageDown();
+      contactPageDown();
+      worksPageDown();
       pageOneUp();
     }
   });
@@ -58,8 +58,8 @@ $(document).ready(function() {
   var pageOneUp = function() {
     $(".page-one").css("opacity", "1");
     $(".full-container").css("background", "rgba(0,0,0,0.3)");
-    worksPageDown();
-    contactPageDown();
+    // worksPageDown();
+    // contactPageDown();
   };
 
   var pageOneDown = function() {
@@ -71,8 +71,8 @@ $(document).ready(function() {
     $("#works-btn").data("status", "on");
     $(".page-two").css("height", "100%");
     $("#works-btn").text("HOME");
-    // pageOneDown();
-    // contactPageDown();
+    pageOneDown();
+    contactPageDown();
   };
 
   var worksPageDown = function() {
@@ -85,8 +85,8 @@ $(document).ready(function() {
     $("#contact-btn").data("status", "on");
     $(".page-three").css("height", "100%");
     $("#contact-btn").text("HOME");
-    // pageOneDown();
-    // worksPageDown();
+    pageOneDown();
+    worksPageDown();
   };
 
   var contactPageDown = function() {
