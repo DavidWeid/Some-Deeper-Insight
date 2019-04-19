@@ -4,6 +4,7 @@ html {
   margin: 0;
   font-family: "Roboto", "Major Mono Display", "Fahkwang", sans-serif;
   font-family: "Fahkwang";
+  letter-spacing: 1px;
 }
 
 /* Page content fits here */
@@ -181,10 +182,24 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Roboto";
-  font-size: 20px;
+  font-family: "Lato";
+  font-size: 24px;
+  font-weight: 100;
   width: 80%;
   height: auto;
+  letter-spacing: 1.2px;
+}
+
+#welcome-title {
+  font-family: "Roboto";
+}
+
+#about-text {
+  background-color: black;
+  opacity: 0;
+  animation: displayText 3s 1s linear both;
+  
+  padding: 0 2% 2% 2%;
 }
 
 #about-me {
@@ -201,8 +216,9 @@ html {
 }
 
 #about-me span {
-  font-weight: 600;
-  color: #dcdde1;
+  font-weight: 625;
+  /* color: #dcdde1; */
+  color: #039be5;
 }
 
 @media all and (max-width: 800px) {
@@ -214,6 +230,7 @@ html {
 @media all and (max-width: 500px) {
   .main-text {
     width: 80%;
+    font-size: 18px;
   }
 
   /* .main-btn-div {
@@ -231,8 +248,10 @@ html {
   font-size: 20px;
   font-family: "Roboto";
   color: black;
+  background-color: #7b8ec1;
   text-align: center;
-  height: 100%;
+  height: auto;
+  padding: 2%;
   margin: 0 auto;
   width: 80%;
   display: flex;
@@ -259,6 +278,7 @@ html {
 @media all and (max-width: 800px) {
   .flex-container {
     justify-content: space-evenly;
+    background-color: #162242;
   }
 
   .column {
@@ -364,6 +384,21 @@ html {
   margin: 0 auto;
   height: 0%;
   transition: 0.5s ease;
+}
+
+.contactForm-row form textarea {
+  height: 9rem;
+}
+
+@media all and (max-width: 500px) {
+  .contactForm-row {
+    width: 60%;
+    margin-top: 5%;
+  }
+  .contactForm-row form textarea {
+    height: 7.5rem;
+  }
+
 }
 
 #contactBtnDiv {
