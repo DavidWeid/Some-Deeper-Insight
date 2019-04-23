@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <title>David Weid | Portfolio</title>
     <!--Contact Form via EmailJS-->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
     <script type="text/javascript">
       (function() {
         emailjs.init("user_D3a0ptuvRtCVZgNsWAiAU");
@@ -12,12 +15,14 @@
     </script>
     <script type="text/javascript">
       window.onload = function() {
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-          event.preventDefault();
-          this.contact_number.value = Math.random() * 100000 | 0;
-          emailjs.sendForm("gmail", "contact_form", this);
-        });
-      }
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function(event) {
+            event.preventDefault();
+            this.contact_number.value = (Math.random() * 100000) | 0;
+            emailjs.sendForm("gmail", "contact_form", this);
+          });
+      };
     </script>
     <!--Google Material Icon Font-->
     <link
@@ -46,167 +51,261 @@
       rel="stylesheet"
     />
     <!--Own.css-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="css/main.css"
-    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   </head>
   <body>
     <div class="full-container">
-
       <div class="overlay"></div>
 
       <!--Nav Button Start-->
       <div class="main-btn-div works-btn-div center-align">
-        <span class="main-btn no-select" id="works-btn" data-status="off">WORKS</span>
+        <span class="main-btn no-select" id="works-btn" data-status="off"
+          >WORKS</span
+        >
       </div>
 
       <div class="main-btn-div contact-btn-div center-align">
-        <span class="main-btn no-select" id="contact-btn" data-status="off">CONTACT</span>
+        <span class="main-btn no-select" id="contact-btn" data-status="off"
+          >CONTACT</span
+        >
       </div>
       <!--Nav Button End-->
 
       <div class="page-one">
-
         <div class="main-text row">
           <div id="about-text" class="col s12 l10 offset-l1 xl6 offset-xl3">
             <h3 id="welcome-title">Welcome</h3>
             <div id="about-me">
-              <p>My name is <span>David Weid</span>.</p> 
-              <p>I am a University of Central Florida graduate with a bachelor's in <span>chemistry</span>.</p>
-              <p> Now I am learning coding through the UCF Bootcamp.</p>
-              <p>My passion to <span>learn</span> and  <span>create</span> fuels me to work hard and make the most of every opportunity I can grab.</p>
+              <p>My name is <span>David Weid</span>.</p>
+              <p>
+                I am a University of Central Florida graduate with a bachelor's
+                in <span>chemistry</span>.
+              </p>
+              <p>Now I am learning coding through the UCF Bootcamp.</p>
+              <p>
+                My passion to <span>learn</span> and <span>create</span> fuels
+                me to work hard and make the most of every opportunity I can
+                grab.
+              </p>
             </div>
           </div>
         </div>
-
       </div>
       <!--Page One End-->
 
       <div class="page-two">
-
         <div class="flex-container">
-    
           <div class="column">
             <div class="cardDiv">
-              <img class="cardImg" src="./images/mongo-scrapper-saved.png" alt="Mongo Scrapper" style="width:100%"/>
+              <img
+                class="cardImg"
+                src="./images/mongo-scrapper-saved.png"
+                alt="Mongo Scrapper"
+                style="width:100%"
+              />
               <div class="cardContainer">
                 <p class="card-text" id="">Mongo Scrapper</p>
-                <p>Scrape articles from NPR News! Save and comment on your favorites.</p>
+                <p>
+                  Scrape articles from NPR News! Save and comment on your
+                  favorites.
+                </p>
                 <p>MongoDB, express-handlebars, axios, cheerio</p>
-                <a target="_blank" href="https://agile-earth-52779.herokuapp.com/"><i class="small material-icons">link</i></a>
+                <a
+                  target="_blank"
+                  href="https://agile-earth-52779.herokuapp.com/"
+                  ><i class="small material-icons">link</i></a
+                >
               </div>
             </div>
           </div>
-  
+
           <div class="column">
             <div class="cardDiv">
-              <img class="cardImg" src="./images/dg-books-search.png" alt="Project Photo" style="width:100%"/>
+              <img
+                class="cardImg"
+                src="./images/dg-books-search.png"
+                alt="Project Photo"
+                style="width:100%"
+              />
               <div class="cardContainer">
                 <p class="card-text" id="">DG Books</p>
-                <p>Search books by title or author, results from Google Books API. View books on Google Books, see a description, or save for later!</p>
+                <p>
+                  Search books by title or author, results from Google Books
+                  API. View books on Google Books, see a description, or save
+                  for later!
+                </p>
                 <p>React, Node/Express, React-Router-DOM</p>
-                <a target="_blank" href="https://dg-books.herokuapp.com/"><i class="small material-icons">link</i></a>
+                <a target="_blank" href="https://dg-books.herokuapp.com/"
+                  ><i class="small material-icons">link</i></a
+                >
               </div>
             </div>
           </div>
-  
+
           <div class="column">
             <div class="cardDiv">
-              <img class="cardImg" src="./images/bamazon-supervisor.png" alt="Project Photo" style="width:100%"/>
+              <img
+                class="cardImg"
+                src="./images/bamazon-supervisor.png"
+                alt="Project Photo"
+                style="width:100%"
+              />
               <div class="cardContainer">
                 <p class="card-text" id="">Bamazon</p>
-                <p>A Command-Line Interface app that serves up an Amazon-like storefront. Three modules: customers, managers, and supervisors.</p>
+                <p>
+                  A Command-Line Interface app that serves up an Amazon-like
+                  storefront. Three modules: customers, managers, and
+                  supervisors.
+                </p>
                 <p>MySQL, Node.js</p>
-                <a target="_blank" href="https://github.com/DavidWeid/Bamazon"><i class="small material-icons">link</i></a>
+                <a target="_blank" href="https://github.com/DavidWeid/Bamazon"
+                  ><i class="small material-icons">link</i></a
+                >
               </div>
             </div>
           </div>
-  
+
           <div class="column">
             <div class="cardDiv">
-              <img class="cardImg" src="./images/amwn-concert.png" alt="Project Photo" style="width:100%"/>
+              <img
+                class="cardImg"
+                src="./images/amwn-concert.png"
+                alt="Project Photo"
+                style="width:100%"
+              />
               <div class="cardContainer">
                 <p class="card-text" id="">Assist Me with Node</p>
-                <p>A Language Interpretation and Recognition Interface working as a command-line node app. Enter parameters and receive data back! Look up info on concerts, songs, or movies.</p>
-                <a target="_blank" href="https://github.com/DavidWeid/Assist-Me-with-Node"><i class="small material-icons">link</i></a>
+                <p>
+                  A Language Interpretation and Recognition Interface working as
+                  a command-line node app. Enter parameters and receive data
+                  back! Look up info on concerts, songs, or movies.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/DavidWeid/Assist-Me-with-Node"
+                  ><i class="small material-icons">link</i></a
+                >
               </div>
             </div>
           </div>
-  
+
           <div class="column">
             <div class="cardDiv">
-              <img class="cardImg" src="./images/hollywoo-clicks.png" alt="Project Photo" style="width:100%"/>
+              <img
+                class="cardImg"
+                src="./images/hollywoo-clicks.png"
+                alt="Project Photo"
+                style="width:100%"
+              />
               <div class="cardContainer">
                 <p class="card-text" id="">HOLLYWOO Clicks</p>
-                <p>Simple React photo-click game. Photos are randomized on-click: each unique click adds to the game state, a duplicate resets state.</p>
-                <a target="_blank" href="https://davidweid.github.io/hollywoo-clicks/"><i class="small material-icons">link</i></a>
+                <p>
+                  Simple React photo-click game. Photos are randomized on-click:
+                  each unique click adds to the game state, a duplicate resets
+                  state.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://davidweid.github.io/hollywoo-clicks/"
+                  ><i class="small material-icons">link</i></a
+                >
               </div>
             </div>
           </div>
-  
+
           <div class="column">
             <div class="cardDiv">
-              <img class="cardImg" src="./images/anime-in-motion.png" alt="Project Photo" style="width:100%"/>
+              <img
+                class="cardImg"
+                src="./images/anime-in-motion.png"
+                alt="Project Photo"
+                style="width:100%"
+              />
               <div class="cardContainer">
                 <p class="card-text" id="">Anime in Motion</p>
-                <p>Web app that allows you to search the GIPHY API for any gifs you want! Ratings are displayed, and links to the gif on GIPHY</p>
-                <a target="_blank" href="https://davidweid.github.io/GifTasticGiphy/"><i class="small material-icons">link</i></a>
+                <p>
+                  Web app that allows you to search the GIPHY API for any gifs
+                  you want! Ratings are displayed, and links to the gif on GIPHY
+                </p>
+                <a
+                  target="_blank"
+                  href="https://davidweid.github.io/GifTasticGiphy/"
+                  ><i class="small material-icons">link</i></a
+                >
               </div>
             </div>
           </div>
-  
+        </div>
       </div>
+      <!--Page Two End-->
 
-    </div>
-    <!--Page Two End-->
+      <div class="page-three">
+        <div class="skewed-bg"></div>
+        <div class="skewed-bg2"></div>
 
-    <div class="page-three">
-
-      <div class="skewed-bg"></div>
-      <div class="skewed-bg2"></div>
-
-      <div class="contact-overlay">
-        561.601.5996 <span id="vline"> | </span> Orlando, FL
-      </div>
-
-      <div class="row contactBtn-row">
-
-        <div class="" id="contactBtnDiv">
-          <a data-status="off" id="email-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez"><i class="material-icons">email</i></a>
-
-          <!-- <a id="phone-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez section scrollspy" id="contact"><i class="material-icons">phone_android</i></a> -->
-
-          <a id="git-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://github.com/DavidWeid" target="_blank"><i class="fab fa-github"></i></a>
-
-          <a id="fb-btn" class="contact-btn btn-floating btn-large waves-effect waves-light bluez" href="https://www.facebook.com/II.xDavidx.II" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <div class="contact-overlay">
+          561.601.5996 <span id="vline"> | </span> Orlando, FL
         </div>
 
+        <div class="row contactBtn-row">
+          <div class="" id="contactBtnDiv">
+            <a
+              data-status="off"
+              id="email-btn"
+              class="contact-btn btn-floating btn-large waves-effect waves-light bluez"
+              ><i class="material-icons">email</i></a
+            >
+
+            <a
+              id="linkedin-btn"
+              class="contact-btn btn-floating btn-large waves-effect waves-light bluez LI-simple-link"
+              href="https://www.linkedin.com/in/david-weid"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <a
+              id="git-btn"
+              class="contact-btn btn-floating btn-large waves-effect waves-light bluez"
+              href="https://github.com/DavidWeid"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            <a
+              id="fb-btn"
+              class="contact-btn btn-floating btn-large waves-effect waves-light bluez"
+              href="https://www.facebook.com/II.xDavidx.II"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="row contactForm-row" id="contactForm">
+          <form id="contact-form">
+            <input type="hidden" name="contact_number" />
+            <label>Name</label>
+            <input required type="text" name="user_name" />
+            <label>Email</label>
+            <input required type="email" name="user_email" />
+            <label>Message</label>
+            <textarea rows="5" name="contact"></textarea>
+            <input class="bluez btn contact-btn" type="submit" value="Send" />
+          </form>
+        </div>
       </div>
-
-      <div class="row contactForm-row" id="contactForm">
-
-        <form id="contact-form">
-          <input type="hidden" name="contact_number">
-          <label>Name</label>
-          <input required type="text" name="user_name">
-          <label>Email</label>
-          <input required type="email" name="user_email">
-          <label>Message</label>
-          <textarea rows="5" name="contact"></textarea>
-          <input class="bluez btn contact-btn" type="submit" value="Send">
-        </form>
-
-      </div>
-
+      <!--Page Three End-->
     </div>
-    <!--Page Three End-->
+    <!--Full Container End-->
 
-  </div>
-  <!--Full Container End-->
-
+    <!--linkedin badge-->
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+    ></script>
     <!--jQuery-->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -217,5 +316,5 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <!--Own.js-->
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
