@@ -201,7 +201,7 @@ html {
   background-color: black;
   opacity: 0;
   animation: displayText 3s 1s linear both;
-  
+
   padding: 0 2% 2% 2%;
 }
 
@@ -401,7 +401,6 @@ html {
   .contactForm-row form textarea {
     height: 7.5rem;
   }
-
 }
 
 #contactBtnDiv {
