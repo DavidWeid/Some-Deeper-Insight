@@ -201,7 +201,6 @@ html {
   background-color: black;
   opacity: 0;
   animation: displayText 3s 1s linear both;
-
   padding: 0 2% 2% 2%;
 }
 
@@ -224,16 +223,24 @@ html {
   color: #039be5;
 }
 
+@media all and (max-width: 1200px) {
+  .main-text {
+    width: 85%;
+    font-size: 22px;
+  }
+}
+
 @media all and (max-width: 800px) {
   .main-text {
-    width: 70%;
+    width: 80%;
+    font-size: 18px;
   }
 }
 
 @media all and (max-width: 500px) {
   .main-text {
-    width: 80%;
-    font-size: 18px;
+    width: 82%;
+    font-size: 16px;
   }
 
   /* .main-btn-div {
@@ -390,17 +397,7 @@ html {
 }
 
 .contactForm-row form textarea {
-  height: 9rem;
-}
-
-@media all and (max-width: 500px) {
-  .contactForm-row {
-    width: 60%;
-    margin-top: 5%;
-  }
-  .contactForm-row form textarea {
-    height: 7.5rem;
-  }
+  height: 8rem;
 }
 
 #contactBtnDiv {
@@ -413,6 +410,7 @@ html {
   font-family: "Roboto";
   font-size: 20px;
   width: 60%;
+  padding-bottom: 2%;
   transition: 0.5s ease;
 }
 
@@ -432,8 +430,36 @@ html {
   background-color: #718093;
 }
 
+@media all and (max-width: 690px) {
+  .email-direct {
+    font-size: 75%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .contactForm-row {
+    width: 60%;
+    margin-top: 5%;
+  }
+  .contactForm-row form textarea {
+    height: 7rem;
+  }
+  #contactBtnDiv {
+    width: 100%;
+  }
+  .email-direct {
+    display: none;
+  }
+}
+
 .bluez {
   background-color: #273c75;
+}
+
+.direct-email {
+  margin: 0;
+  text-align: center;
+  font-size: 95%;
 }
 
 #contactForm input[type="text"],

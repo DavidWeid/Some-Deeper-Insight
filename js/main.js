@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
 
   var contactBtnDivUp = function() {
-    $(".contactBtn-row").css("height", "25%");
+    $(".contactBtn-row").css("height", "20%");
     $("#contactBtnDiv").css("top", "18%");
   };
 
@@ -48,7 +48,7 @@ $(document).ready(function() {
   };
 
   var contactFormUp = function() {
-    $(".contactForm-row").css("height", "75%");
+    $(".contactForm-row").css("height", "80%");
   };
 
   var contactFormDown = function() {
