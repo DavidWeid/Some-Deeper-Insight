@@ -1,6 +1,14 @@
 $(document).ready(function() {
   console.log("Ready");
 
+  $("#about-btn").on("click", function() {
+    if ($(this).data("status") === "off") {
+      aboutPageUp();
+    } else {
+      aboutPageDown();
+    }
+  });
+
   $("#works-btn").on("click", function() {
     if ($(this).data("status") === "off") {
       worksPageUp();
@@ -77,6 +85,22 @@ $(document).ready(function() {
   var pageOneDown = function() {
     $(".page-one").css("opacity", "0");
     $(".full-container").css("background", "rgba(0,0,0,1)");
+  };
+
+  var aboutPageUp = function() {
+    $("#about-btn").data("status", "on");
+    $(".page-four").css("height", "100%");
+    $("#about-btn").text("HOME");
+    $("#works-btn").css("visibility", "hidden");
+    $("#contact-btn").css("visibility", "hidden");
+  };
+
+  var aboutPageDown = function() {
+    $("#about-btn").data("status", "off");
+    $(".page-four").css("height", "0");
+    $("#about-btn").text("ABOUT");
+    $("#works-btn").css("visibility", "visible");
+    $("#contact-btn").css("visibility", "visible");
   };
 
   var worksPageUp = function() {
