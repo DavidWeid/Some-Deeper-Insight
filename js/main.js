@@ -29,10 +29,13 @@ $(document).ready(function() {
     if ($(this).data("status") === "off") {
       $(this).data("status", "on");
       $("#message-sent").css("opacity", "0");
+      $(".contact-overlay").css("opacity", "0");
+      $(".text-field").val("");
       contactBtnDivUp();
       contactFormUp();
     } else {
       $(this).data("status", "off");
+      $(".contact-overlay").css("opacity", "1");
       contactBtnDivDown();
       contactFormDown();
     }
@@ -41,9 +44,9 @@ $(document).ready(function() {
   $("#send-btn").on("click", function() {
     contactBtnDivDown();
     contactFormDown();
-    $(".text-field").val("");
     $("#email-btn").data("status", "off");
     $("#message-sent").css("opacity", "1");
+    $(".contact-overlay").css("opacity", "1");
   });
 
   var contactBtnDivUp = function() {
