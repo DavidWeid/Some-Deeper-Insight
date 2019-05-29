@@ -332,6 +332,7 @@
               target="_blank"
               ><i class="fab fa-facebook-f"></i
             ></a>
+            <p id="message-sent" style="opacity:0">Thank You!</p>
           </div>
         </div>
 
@@ -340,12 +341,17 @@
           <form id="contact-form">
             <input type="hidden" name="contact_number" />
             <label>Name</label>
-            <input required type="text" name="user_name" />
+            <input class="text-field" required type="text" name="user_name" />
             <label>Email</label>
-            <input required type="email" name="user_email" />
+            <input class="text-field" required type="email" name="user_email" />
             <label>Message</label>
-            <textarea rows="5" name="contact"></textarea>
-            <input class="bluez btn contact-btn" type="submit" value="Send" />
+            <textarea class="text-field" rows="5" name="contact"></textarea>
+            <input
+              id="send-btn"
+              class="bluez btn contact-btn"
+              type="submit"
+              value="Send"
+            />
             <span class="email-direct">david.weid.2@gmail.com</span>
           </form>
         </div>

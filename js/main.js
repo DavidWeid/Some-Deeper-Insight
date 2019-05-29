@@ -28,6 +28,7 @@ $(document).ready(function() {
   $("#email-btn").on("click", function() {
     if ($(this).data("status") === "off") {
       $(this).data("status", "on");
+      $("#message-sent").css("opacity", "0");
       contactBtnDivUp();
       contactFormUp();
     } else {
@@ -35,6 +36,14 @@ $(document).ready(function() {
       contactBtnDivDown();
       contactFormDown();
     }
+  });
+
+  $("#send-btn").on("click", function() {
+    contactBtnDivDown();
+    contactFormDown();
+    $(".text-field").val("");
+    $("#email-btn").data("status", "off");
+    $("#message-sent").css("opacity", "1");
   });
 
   var contactBtnDivUp = function() {
