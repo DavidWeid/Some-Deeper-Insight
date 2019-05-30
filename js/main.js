@@ -14,10 +14,12 @@ $(document).ready(function() {
       worksPageUp();
       contactPageDown();
       pageOneDown();
+      hideAboutBtn();
     } else {
       worksPageDown();
       contactPageDown();
       pageOneUp();
+      showAboutBtn();
     }
   });
 
@@ -26,10 +28,12 @@ $(document).ready(function() {
       contactPageUp();
       worksPageDown();
       pageOneDown();
+      hideAboutBtn();
     } else {
       contactPageDown();
       worksPageDown();
       pageOneUp();
+      showAboutBtn();
     }
   });
 
@@ -78,8 +82,6 @@ $(document).ready(function() {
   var pageOneUp = function() {
     $(".page-one").css("opacity", "1");
     $(".full-container").css("background", "rgba(0,0,0,0.3)");
-    // worksPageDown();
-    // contactPageDown();
   };
 
   var pageOneDown = function() {
@@ -91,6 +93,7 @@ $(document).ready(function() {
     $("#about-btn").data("status", "on");
     $(".page-four").css("height", "100%");
     $("#about-btn").text("HOME");
+    $(".about-btn-div").css("bottom", "95%");
     $("#works-btn").css("visibility", "hidden");
     $("#contact-btn").css("visibility", "hidden");
   };
@@ -99,8 +102,17 @@ $(document).ready(function() {
     $("#about-btn").data("status", "off");
     $(".page-four").css("height", "0");
     $("#about-btn").text("ABOUT");
+    $(".about-btn-div").css("bottom", "5%");
     $("#works-btn").css("visibility", "visible");
     $("#contact-btn").css("visibility", "visible");
+  };
+
+  var hideAboutBtn = function() {
+    $(".about-btn-div").css("visibility", "hidden");
+  };
+
+  var showAboutBtn = function() {
+    $(".about-btn-div").css("visibility", "visible");
   };
 
   var worksPageUp = function() {
