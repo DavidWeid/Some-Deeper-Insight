@@ -2,7 +2,55 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>David Weid | Portfolio</title>
+    <!--Google Material Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Font Awesome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <!--Materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fahkwang|Lato|Open+Sans:300|Roboto"
+      rel="stylesheet"
+    />
+    <!--Own.css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script
+      defer
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+    ></script>
+    <!--jQuery-->
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!--Materialize.js-->
+    <script defer type="text/javascript" src="js/materialize.min.js"></script>
     <!--Contact Form via EmailJS-->
     <script
       type="text/javascript"
@@ -24,34 +72,8 @@
           });
       };
     </script>
-    <!--Google Material Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!--Font Awesome Icons-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <!--Materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Google Fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Fahkwang|Lato|Open+Sans:300|Roboto"
-      rel="stylesheet"
-    />
-    <!--Own.css-->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!--Own.js-->
+    <script defer src="js/main.js"></script>
   </head>
   <body>
     <div class="full-container">
@@ -99,12 +121,12 @@
             <div class="cardDiv cardDiv-featured">
               <div class="imgDiv">
                 <img
-                  class="cardImg img-featured"
+                  class="lozad cardImg img-featured"
                   src="./images/rover-reddit-landing.png"
                   alt="Featured Project: Rover Reddit!"
                 />
                 <img
-                  class="cardImg img-featured second-img"
+                  class="lozad cardImg img-featured second-img"
                   src="./images/rover-reddit-data.png"
                   alt="Featured Project: Rover Reddit!"
                 />
@@ -113,9 +135,9 @@
                 <p class="card-text" id="">Rover Reddit</p>
                 <p>
                   Rover Reddit is a full stack web application that uses Node,
-                  Express, React, Cheerio, and Passport. Users can
-                  sign on to share, comment, and save photos from NASA's API and
-                  articles scraped from space.com.
+                  Express, React, Cheerio, and Passport. Users can sign on to
+                  share, comment, and save photos from NASA's API and articles
+                  scraped from space.com.
                 </p>
 
                 <p>
@@ -148,7 +170,7 @@
           <div class="column">
             <div class="cardDiv">
               <img
-                class="cardImg"
+                class="lozad cardImg"
                 src="./images/mongo-scrapper-saved.png"
                 alt="Mongo Scrapper"
                 style="width:100%"
@@ -170,7 +192,7 @@
           <div class="column">
             <div class="cardDiv">
               <img
-                class="cardImg"
+                class="lozad cardImg"
                 src="./images/TS Tribute.png"
                 alt="Project Photo"
                 style="width:100%"
@@ -194,7 +216,7 @@
           <div class="column">
             <div class="cardDiv">
               <img
-                class="cardImg"
+                class="lozad cardImg"
                 src="./images/bamazon-supervisor.png"
                 alt="Project Photo"
                 style="width:100%"
@@ -217,7 +239,7 @@
           <div class="column">
             <div class="cardDiv">
               <img
-                class="cardImg"
+                class="lozad cardImg"
                 src="./images/amwn-concert.png"
                 alt="Project Photo"
                 style="width:100%"
@@ -241,7 +263,7 @@
           <div class="column">
             <div class="cardDiv">
               <img
-                class="cardImg"
+                class="lozad cardImg"
                 src="./images/hollywoo-clicks.png"
                 alt="Project Photo"
                 style="width:100%"
@@ -265,7 +287,7 @@
           <div class="column">
             <div class="cardDiv">
               <img
-                class="cardImg"
+                class="lozad cardImg"
                 src="./images/anime-in-motion.png"
                 alt="Project Photo"
                 style="width:100%"
@@ -359,7 +381,7 @@
         <div class="about-container">
           <div class="about-img">
             <img
-              class="profile-img"
+              class="lozad profile-img"
               src="./images/profile-pic.jpg"
               alt="David Weid"
             />
@@ -396,21 +418,5 @@
     <!--Full Container End-->
 
     <!--linkedin badge-->
-    <script
-      type="text/javascript"
-      src="https://platform.linkedin.com/badges/js/profile.js"
-      async
-      defer
-    ></script>
-    <!--jQuery-->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <!--Materialize.js-->
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!--Own.js-->
-    <script src="js/main.js"></script>
   </body>
 </html>

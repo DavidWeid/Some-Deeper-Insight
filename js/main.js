@@ -1,6 +1,10 @@
 $(document).ready(function() {
   console.log("Ready");
 
+  // lazy loads elements with default selector as '.lozad'
+  const observer = lozad();
+  observer.observe();
+
   $("#about-btn").on("click", function() {
     if ($(this).data("status") === "off") {
       aboutPageUp();
