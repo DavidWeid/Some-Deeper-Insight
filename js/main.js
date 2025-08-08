@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  console.log("Ready");
-
   // lazy loads elements with default selector as '.lozad'
   const observer = lozad();
   observer.observe();
@@ -148,5 +146,7 @@ $(document).ready(function() {
     $(".page-three").css("height", "0%");
     $("#contact-btn").text("CONTACT");
   };
+
+  pageOneUp();
 });
 // Document.ready
