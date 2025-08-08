@@ -5,6 +5,7 @@ $(document).ready(function() {
 
   $("#about-btn").on("click", function() {
     if ($(this).data("status") === "off") {
+      $(".main-text").css("z-index", "unset");
       aboutPageUp();
     } else {
       aboutPageDown();
