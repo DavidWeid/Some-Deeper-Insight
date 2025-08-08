@@ -86,11 +86,13 @@ $(document).ready(function() {
   var pageOneUp = function() {
     $(".page-one").css("opacity", "1");
     $(".full-container").css("background", "rgba(0,0,0,0.3)");
+    $(".main-text").css("z-index", "10");
   };
 
   var pageOneDown = function() {
     $(".page-one").css("opacity", "0");
     $(".full-container").css("background", "rgba(0,0,0,1)");
+    $(".main-text").css("z-index", "unset");
   };
 
   var aboutPageUp = function() {
